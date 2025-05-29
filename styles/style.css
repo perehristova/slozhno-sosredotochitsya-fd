@@ -20,7 +20,6 @@
     height: 100vh;
     min-height: 668px;
     padding: var(--main-padding);
-    background-image: var(--bg-image);
 }
 
 /* Декоративный элемент - уголки */
