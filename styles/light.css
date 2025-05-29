@@ -20,22 +20,22 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-    --h-subtitle-color: #353430;
-    --bg-color: #FF8DCB;
-    --main-color: #353430;
-    --bg-image: url(../images/cover-image-light.png);
-    --accent-color: #353430;
-    --special-color: #353430;
-    --title-color: #FFC2E6;
+        --h-subtitle-color: #353430;
+        --bg-color: #FF8DCB;
+        --main-color: #353430;
+        --bg-image: url(../images/cover-image-light.png);
+        --accent-color: #353430;
+        --special-color: #353430;
+        --title-color: #FFC2E6;
     }
+
     .el__recording {
-    display: none;
-}
+        display: none;
+    }
 }
 
 .theme-light .page {
-.el__recording {
-    display: none;
+    .el__recording {
+        display: none;
+    }
 }
-}
-

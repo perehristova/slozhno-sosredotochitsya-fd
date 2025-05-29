@@ -94,36 +94,6 @@
     cursor: pointer;
 }
 
-/* Special Link */
-
-.special-link {
-    text-decoration: none;
-    text-shadow: 2px 1px 0 var(--bg-color);
-}
-
-.special-link:hover {
-    border-bottom: 1px solid var(--special-color);
-    /* text-decoration: underline;
-  text-underline-offset: 2px; */
-}
-
-
-.theme-dark .header__theme-menu-button_type_dark {
-    outline: 1px solid var(--main-color);
-  }
-
-  .theme-light .header__theme-menu-button_type_light {
-    outline: 1px solid var(--main-color);
-}
-
-.special-link:focus {
-    outline: none;
-}
-
-.special-link:focus-visible {
-    outline: 1px solid var(--main-color);
-}
-
 .header__theme-menu-button:hover {
     outline: 1px solid;
     background-color: rgba(var(--main-color), 0.4);
@@ -135,6 +105,34 @@
 
 .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid var(--main-color);
+}
+
+.theme-dark .header__theme-menu-button_type_dark {
+    outline: 1px solid var(--main-color);
+}
+
+.theme-light .header__theme-menu-button_type_light {
+    outline: 1px solid var(--main-color);
+}
+
+/* Special Link */
+.special-link {
+    text-decoration: none;
+    text-shadow: 2px 1px 0 var(--bg-color);
+}
+
+.special-link:hover {
+    border-bottom: 1px solid var(--special-color);
+    /* text-decoration: underline;
+  text-underline-offset: 2px; */
+}
+
+.special-link:focus {
+    outline: none;
+}
+
+.special-link:focus-visible {
+    outline: 1px solid var(--main-color);
 }
 
 /* Заголовок для header */
@@ -155,10 +153,10 @@
 /* Подзаголовок для header */
 
 .header__subtitle {
-    color: var(--h-subtitle-color);
-    background-color: var(--bg-color);
     justify-self: center;
     align-items: center;
+    color: var(--h-subtitle-color);
+    background-color: var(--bg-color);
 }
 
 /* Оформление заголовков */
@@ -291,11 +289,11 @@ p {
 
 .footer__title {
     justify-self: center;
-    text-shadow: 2px 2px 0 var(--main-color);
+    text-shadow: 2px 2px 0 var(--bg-color);
 }
 
 @media (width >=768px) {
-/* 
+    /* 
     .page {
   inline-size: 768px;
 } */
@@ -449,7 +447,7 @@ p {
         font-size: var(--calc-main-font-size);
         /* font-size: 157px; */
     }
-    
+
     .concentration__title {
         min-inline-size: 315px;
         text-wrap: wrap;
@@ -475,9 +473,3 @@ p {
         min-height: 768px;
     }
 }
-
-
-/* Сделан коммент ради коммента */
-
-/* Сделан коммент ради коммента */
-/* Сделан коммент ради коммента */

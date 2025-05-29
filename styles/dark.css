@@ -19,8 +19,7 @@
 }
 
 .theme-dark .page {
-.el__recording {
-    display: block;
+    .el__recording {
+        display: block;
+    }
 }
-}
-
