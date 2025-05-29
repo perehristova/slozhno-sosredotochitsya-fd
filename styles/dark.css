@@ -17,6 +17,8 @@
 }
 
 
-.theme-dark .header__theme-menu-button_type_dark {
+.theme-dark .page {
+  .header__theme-menu-button_type_dark {
     outline: 1px solid var(--accent-color);
+  }
 }

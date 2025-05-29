@@ -16,10 +16,58 @@
     --title-color: #FFC2E6;
 }
 
+.theme-light .page {
+  .el__recording {
+    display: none;
+  }
 
+  .special-link:hover {
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .special-link:hover {
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .special-link:focus-visible {
+    outline: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .decorated-zone::before {
+    content: "";
+    border-top: 1px solid var(--text-color-for-accent-color);
+    border-right: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .decorated-zone::after {
+    content: "";
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+    border-left: 1px solid var(--text-color-for-accent-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color-for-accent-color);
+  }
+
+  .header__theme-menu-button_type_light {
+    outline: 1px solid var(--text-color-for-accent-color);
+  }
+
+  h2 {
+    color: var(--text-color-for-accent-color);
+  }
+
+  .footer__title {
+    color: var(--title-color);
+  }
+}
 
 @media (prefers-color-scheme: light) {
-    root {
+    .page {
         --accent-color: #FF8DCB;
         --bg-image: url(../images/cover-image-light.png);
         --text-color-for-accent-color: #353430;
@@ -28,49 +76,18 @@
     }
 }
 
-.theme-light .el__recording {
-    display: none;
-}
-
-.theme-light .special-link:hover {
-    border-bottom: 1px solid var(--text-color-for-accent-color);
-
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-color-for-accent-color);
-}
-
-.theme-light .special-link:focus-visible {
-    outline: 1px solid var(--text-color-for-accent-color);
-}
-
-.theme-light .decorated-zone::before {
-    content: "";
-    border-top: 1px solid var(--text-color-for-accent-color);
-    border-right: 1px solid var(--text-color-for-accent-color);
-}
-
-.theme-light .decorated-zone::after {
-    content: "";
-    border-bottom: 1px solid var(--text-color-for-accent-color);
-    border-left: 1px solid var(--text-color-for-accent-color);
-}
-
-.theme-light .header__theme-menu-button {
-    color: var(--text-color-for-accent-color);
-}
-
-.theme-light .header__theme-menu-button_type_light {
-    outline: 1px solid var(--text-color-for-accent-color);
-}
 
 
 
-.theme-light h2 {
-    color: var(--text-color-for-accent-color);
-}
 
-.theme-light .footer__title {
-    color: var(--title-color);
-}
+
+
+
+
+
+
+
+
+
+
+
