@@ -5,12 +5,72 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
+    /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --accent-color: #FF8DCB;
+    --bg-image: url(../images/cover-image-light.png);
+    --text-color-for-accent-color: #353430;
+    --paragraf-color: #353430;
+    --title-color: #FFC2E6;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+
+
+@media (prefers-color-scheme: light) {
+    root {
+        --accent-color: #FF8DCB;
+        --bg-image: url(../images/cover-image-light.png);
+        --text-color-for-accent-color: #353430;
+        --paragraf-color: #353430;
+        --title-color: #FFC2E6;
+    }
+}
+
+.theme-light .el__recording {
+    display: none;
+}
+
+.theme-light .special-link:hover {
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+}
+
+.theme-light .special-link:focus-visible {
+    outline: 1px solid var(--text-color-for-accent-color);
+}
+
+.theme-light .decorated-zone::before {
+    content: "";
+    border-top: 1px solid var(--text-color-for-accent-color);
+    border-right: 1px solid var(--text-color-for-accent-color);
+}
+
+.theme-light .decorated-zone::after {
+    content: "";
+    border-bottom: 1px solid var(--text-color-for-accent-color);
+    border-left: 1px solid var(--text-color-for-accent-color);
+}
+
+.theme-light .header__theme-menu-button {
+    color: var(--text-color-for-accent-color);
+}
+
+.theme-light .header__theme-menu-button_type_light {
+    outline: 1px solid var(--text-color-for-accent-color);
+}
+
+
+
+.theme-light h2 {
+    color: var(--text-color-for-accent-color);
+}
+
+.theme-light .footer__title {
+    color: var(--title-color);
 }

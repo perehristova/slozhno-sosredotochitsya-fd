@@ -2,3 +2,39 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --accent-color: #ff0070;
+    --title-color: rgba(219, 0, 255, 1);
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color-for-accent-color: rgba(0, 0, 40, 1);
+    --paragraf-color: #F1B2CE;
+    --margin-block-start: 10px;
+    /* margin-top */
+    --margin-block-end: 10px;
+    /* margin-bottom */
+    --margin-inline-start: 10px;
+    /* margin-left */
+    --margin-inline-end: 10px;
+    /* margin-right */
+    --main-font: 'IBM Plex mono';
+    --main-font-weight: 700;
+    --sub-font-weight: 400;
+    --main-font-size: 18px;
+    --calc-main-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --padding-block-start: 10px;
+    --padding-block-end: 10px;
+    --padding-inline-start: 10px;
+    --padding-inline-end: 10px;
+    --main-padding: 10px;
+}
+
+@media (width >=768px) {
+    :root {
+        --calc-main-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+        --padding-block-start: 20px;
+        --padding-block-end: 20px;
+        --padding-inline-start: 20px;
+        --padding-inline-end: 20px;
+        --main-padding: 20px;
+    }
+}
