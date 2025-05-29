@@ -3,11 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
-    --accent-color: #ff0070;
+    --h-subtitle-color: #000028;
+    --bg-color: #ff0070;
+    --main-color: #FF0070;
     --title-color: rgba(219, 0, 255, 1);
     --bg-image: url(../images/cover-image-dark.png);
-    --text-color-for-accent-color: rgba(0, 0, 40, 1);
-    --paragraf-color: #F1B2CE;
+    --accent-color: #000028;
+    --special-color: #F1B2CE;
     --margin-block-start: 10px;
     /* margin-top */
     --margin-block-end: 10px;
