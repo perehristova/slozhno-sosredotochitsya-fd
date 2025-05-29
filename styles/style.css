@@ -326,7 +326,7 @@ p {
 
     .header__subtitle {
         justify-self: end;
-        width: 50%;
+        max-width: 50%;
     }
 
     .main {
