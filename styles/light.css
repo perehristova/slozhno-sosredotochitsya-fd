@@ -22,13 +22,15 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --h-subtitle-color: #353430;
-        --bg-color: #FF8DCB;
-        --main-color: #353430;
-        --bg-image: url(../images/cover-image-light.png);
-        --accent-color: #353430;
-        --special-color: #353430;
-        --title-color: #FFC2E6;
+    --page-bg-color: #fff1f7;
+    --h-subtitle-color: #353430;
+    --bg-color: #FF8DCB;
+    --main-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #353430;
+    --special-color: #353430;
+    --title-color: #FFC2E6;
+    --border-color-hover: rgba(50, 49, 45, 0.4);
     }
 
     .el__recording {

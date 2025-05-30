@@ -4,11 +4,11 @@
 .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     font-family: var(--main-font), monospace;
+    background-color: var(--page-bg-color);
     background-image: var(--bg-image);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
-    background-color: var(--page-bg-color);
+    background-attachment: fixed;
 }
 
 /* HEADER */
@@ -32,30 +32,30 @@
 }
 
 .decorated-zone::before {
+    top: 10px;
+    right: 10px;
     justify-self: end;
     align-self: start;
     border-top: 1px solid var(--main-color);
     border-right: 1px solid var(--main-color);
-    top: 10px;
-    right: 10px;
 }
 
 .decorated-zone::after {
+    bottom: 10px;
+    left: 10px;
     justify-self: start;
     align-self: end;
     border-bottom: 1px solid var(--main-color);
     border-left: 1px solid var(--main-color);
-    bottom: 10px;
-    left: 10px;
 }
 
 /* Декоративный элемент для темной темы REC */
 .el__recording {
     position: absolute;
-    justify-self: end;
-    align-self: start;
     top: 10px;
     right: 39px;
+    justify-self: end;
+    align-self: start;
     color: var(--main-color);
     font-family: var(--main-font), monospace;
     font-weight: var(--sub-font-weight);
@@ -79,17 +79,17 @@
 
 /* Оформление переключателей темы */
 .header__theme-menu-list {
+    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-self: end;
     gap: 10px;
-    z-index: 5;
 }
 
 .header__theme-menu-button {
-    padding-left: 13px;
-    padding-right: 13px;
     border: none;
+    padding-right: 13px;
+    padding-left: 13px;
     color: var(--main-color);
     font-family: var(--main-font), monospace;
     font-weight: var(--sub-font-weight);
@@ -138,9 +138,9 @@
 
 /* Заголовок для header */
 .header__title {
+    z-index: 5;
     justify-self: start;
     text-shadow: 4px 4px 0 var(--bg-color);
-    z-index: 5;
 }
 
 .title {
@@ -153,10 +153,10 @@
 
 /* Подзаголовок для header */
 .header__subtitle {
+    z-index: 5;
     justify-self: center;
     align-items: center;
     background-color: var(--bg-color);
-    z-index: 5;
 }
 
 .subtitle {
@@ -262,9 +262,9 @@
 }
 
 .footer__title {
+    z-index: 5;
     justify-self: center;
     text-shadow: 2px 2px 0 var(--bg-color);
-    z-index: 5;
 }
 
 /* Разрешение больше либо равно 768px */
