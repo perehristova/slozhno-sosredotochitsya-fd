@@ -9,6 +9,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 668px;
 }
 
 /* HEADER */
@@ -259,6 +260,7 @@
     height: 100vh;
     margin-top: 40px;
     padding: var(--main-padding);
+    min-height: 668px;
 }
 
 .footer__title {
